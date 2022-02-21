@@ -30,7 +30,7 @@ document.addEventListener('click', function(e) {
 
 // Adding EventListener to our document (keypress event)
 document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape") {
+    if (e.key === "Escape" && !modal.classList.contains('hidden')) {
         closeModal();
     }
 });
